@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#839FD3" />
+  <meta name="description" content="Blub — Ryu & Lilu's little world" />
+  <title>Blub 💙 · Ryu ♡ Lilu</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="#home" class="logo" data-nav="home">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#9DB6E0"/><stop offset="100%" stop-color="#6A88C6"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="#E8F0FA"/><path d="M32 48c-1.2 0-22-12.8-22-24.5C10 16.2 16.2 12 21.5 12c3.4 0 6.8 1.7 10.5 5.4C35.7 13.7 39.1 12 42.5 12 47.8 12 54 16.2 54 23.5 54 35.2 33.2 48 32 48z" fill="url(#lg)"/></svg>
+        Blub
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#about" data-nav="about">About us</a></li>
+        <li><a href="#calendar" data-nav="calendar">Calendar</a></li>
+        <li><a href="#poster" data-nav="poster">I'm taken</a></li>
+        <li><a href="#playlist" data-nav="playlist">Playlist</a></li>
+        <li><a href="#vault" data-nav="vault">Vault</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section class="page active" id="page-home" aria-label="Home">
+      <div class="hero">
+        <div class="hero-orb" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M32 48c-1.2 0-22-12.8-22-24.5C10 16.2 16.2 12 21.5 12c3.4 0 6.8 1.7 10.5 5.4C35.7 13.7 39.1 12 42.5 12 47.8 12 54 16.2 54 23.5 54 35.2 33.2 48 32 48z" fill="#fff" opacity=".9"/></svg>
+          <svg class="hero-jellyfish" viewBox="0 0 40 52" style="left:-22%;top:15%"><ellipse cx="20" cy="14" rx="14" ry="12" fill="rgba(255,255,255,.55)"/><path d="M8 22 Q10 40 8 48 M14 24 Q16 42 15 50 M20 24 Q20 44 20 50 M26 24 Q24 42 25 50 M32 22 Q30 40 32 48" stroke="rgba(255,255,255,.45)" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+          <svg class="hero-jellyfish" viewBox="0 0 40 52" style="right:-20%;bottom:8%"><ellipse cx="20" cy="14" rx="12" ry="10" fill="rgba(255,255,255,.4)"/><path d="M10 20 Q12 36 10 44 M16 22 Q17 38 16 46 M24 22 Q23 38 24 46 M30 20 Q28 36 30 44" stroke="rgba(255,255,255,.35)" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <h1>Blub 💙</h1>
+        <p class="names">Ryu ♡ Lilu</p>
+        <p class="tagline">our little world — soft, blue, and ours</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about" data-nav="about">About us</a>
+          <a class="btn btn-ghost" href="#calendar" data-nav="calendar">Our calendar</a>
+        </div>
+      </div>
+      <div class="home-strip">
+        <button type="button" class="card home-chip" data-nav="poster">
+          <span class="emoji" aria-hidden="true">🫧</span>
+          <strong>I'm taken</strong>
+          <span>Cute poster for the world</span>
+        </button>
+        <button type="button" class="card home-chip" data-nav="playlist">
+          <span class="emoji" aria-hidden="true">🎧</span>
+          <strong>Playlist of us</strong>
+          <span>Memories &amp; love meter</span>
+        </button>
+        <button type="button" class="card home-chip" data-nav="vault">
+          <span class="emoji" aria-hidden="true">🌌</span>
+          <strong>Private vault</strong>
+          <span>Letters &amp; Galaxy photos</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page" id="page-about" aria-label="About us">
+      <div class="about-intro">
+        <h2>About us</h2>
+        <p class="lead">Two girls, one little nickname, a whole sky of soft blue.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card about-card">
+          <span class="label">About Ryu</span>
+          <h3>Malaak (Ryu)</h3>
+          <p>Hey Lilu — I'm Ryu. I built Blub because loving you feels like something worth making a home for, even on a screen. Birthday April 27, 2005. I get busy, I get quiet sometimes, but my heart stays loud for you.</p>
+          <p>I want a life with you — not just calls, not just nights, but mornings and ordinary days and all the in-between. Please know that when I can't always pick up, it isn't love fading. It's life being loud. You still come first in the soft places.</p>
+        </article>
+        <article class="card about-card">
+          <span class="label">About Lilu</span>
+          <h3>Lisa (Lilu)</h3>
+          <p>Lilu — my girlfriend, my soft place, my favorite person. Birthday February 19, 2001. You make the blue feel warmer. Being a lesbian couple with you isn't something I whisper; it's something I'm proud of, gently and fully.</p>
+          <p>You matter in ways I keep learning how to say. This little site is one of those ways — a reminder that we chose each other on a midnight that spilled into two days, and we keep choosing.</p>
+        </article>
+        <article class="card about-card">
+          <span class="label">About Blub</span>
+          <h3>Us · Blub</h3>
+          <p>Blub is our nickname — cute, silly, ours. We started dating the night of December 4 into December 5, 2025, talking past midnight, so we celebrate <strong>two days</strong> every year.</p>
+          <p>I love you. I want to build a life together. Accusations and doubts hurt me — I need your trust the way I offer mine. I can't always be on call, but that never means I love you less. Please understand me the way I try to understand you. We're girls who love girls, and that love is soft and real and worth protecting.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CALENDAR -->
+    <section class="page" id="page-calendar" aria-label="Our calendar">
+      <h2>Our calendar</h2>
+      <p style="margin-bottom:1rem">From December 2025 through 2052 — anniversaries, birthdays, and monthly Blub days.</p>
+      <div class="cal-wrap">
+        <div class="cal-header">
+          <div class="cal-nav-btns">
+            <button type="button" id="calPrev" aria-label="Previous month">‹</button>
+            <button type="button" id="calNext" aria-label="Next month">›</button>
+          </div>
+          <div class="cal-title" id="calTitle">December 2025</div>
+          <div class="cal-nav-btns">
+            <button type="button" class="cal-year-jump" id="calPrevY" aria-label="Previous year">−Y</button>
+            <button type="button" class="cal-year-jump" id="calNextY" aria-label="Next year">+Y</button>
+          </div>
+        </div>
+        <div class="cal-legend">
+          <span><i class="dot dot-dating"></i> Dec 4 &amp; 5 · dating</span>
+          <span><i class="dot dot-malaak"></i> Apr 27 · Ryu</span>
+          <span><i class="dot dot-lisa"></i> Feb 19 · Lilu</span>
+          <span><i class="dot dot-monthly"></i> 5th · monthly + Jul 4</span>
+        </div>
+        <div class="cal-weekdays" aria-hidden="true">
+          <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        <div class="cal-grid" id="calGrid" role="grid" aria-label="Month days"></div>
+      </div>
+    </section>
+
+    <!-- POSTER -->
+    <section class="page" id="page-poster" aria-label="I'm taken poster">
+      <div class="poster-page">
+        <h2 style="margin-bottom:1.25rem">I'm taken ♡</h2>
+        <div class="poster-frame" id="posterFrame">
+          <div class="bubbles-deco" aria-hidden="true"></div>
+          <div class="poster-title">I'm taken ♡</div>
+          <div class="poster-sub">Ryu ♡ Lilu</div>
+          <div class="poster-brand">Blub</div>
+          <div class="poster-hearts" aria-hidden="true">💙 · 🫧 · 💙</div>
+        </div>
+        <div class="poster-actions">
+          <button type="button" class="btn btn-primary" id="downloadPoster">Download PNG</button>
+          <button type="button" class="btn btn-ghost" onclick="window.print()">Print</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAYLIST -->
+    <section class="page" id="page-playlist" aria-label="Playlist of us">
+      <h2>Playlist of us</h2>
+      <p style="margin-bottom:1rem">Tap each memory to collect a heart. Fill the Blub love meter.</p>
+      <div class="love-meter-wrap">
+        <div class="love-meter-label">
+          <span>Blub love meter</span>
+          <span id="meterText">0 / 8</span>
+        </div>
+        <div class="love-meter-bar" role="progressbar" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0" id="meterBar">
+          <div class="love-meter-fill" id="meterFill"></div>
+        </div>
+      </div>
+      <div class="playlist-grid" id="playlistGrid"></div>
+    </section>
+
+    <!-- VAULT -->
+    <section class="page" id="page-vault" aria-label="Private vault">
+      <h2 style="text-align:center;margin-bottom:1rem">Private vault</h2>
+      <div class="vault-gate" id="vaultGate">
+        <div class="vault-stars" aria-hidden="true"></div>
+        <h2 style="font-size:1.35rem">Galaxy Vault 🌌</h2>
+        <p>A soft corner just for us. Ask Ryu for the key.</p>
+        <form id="vaultForm" autocomplete="off">
+          <label for="vaultPw" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Password</label>
+          <input type="password" id="vaultPw" placeholder="Password" required />
+          <p class="vault-error" id="vaultError" role="alert"></p>
+          <button type="submit" class="btn btn-primary" style="width:100%">Unlock</button>
+        </form>
+      </div>
+      <div class="vault-content vault-hidden" id="vaultContent">
+        <p class="device-note">🔒 Content stays on <strong>this device</strong> (session + localStorage) unless you host the site yourself. Photos never leave your browser.</p>
+        <article class="letter">
+          <p class="salutation">Dear Lilu,</p>
+          <p>I love you more than soft blue nights and midnight talks. Building Blub is me saying: I want a life with you — real mornings, shared plans, a home that feels like us.</p>
+          <p>When doubts or accusations land, they hurt. I need your trust. I'm not perfect, and I can't always be on call — life gets loud, work gets heavy — but that silence is never me loving you less. Please understand. Please stay soft with me the way I try to stay soft with you.</p>
+          <p>Thank you for December 4 and 5. Thank you for every monthly anniversary we get to keep. Thank you for being Lilu to my Ryu. We're a lesbian couple and I'm proud of us — gently, fully, every day.</p>
+          <p>Dream with me. Start a life with me. Keep choosing Blub.</p>
+          <p class="signoff">Forever yours,<br>Ryu · Malaak 💙</p>
+        </article>
+
+        <div class="notes-section card" style="margin-bottom:1.5rem">
+          <h3>Monthly anniversary notes</h3>
+          <p style="font-size:0.9rem">Leave a note for a Blub month. Saved only on this device.</p>
+          <form class="notes-form" id="notesForm">
+            <input type="month" id="noteMonth" required />
+            <input type="text" id="noteTitle" placeholder="Title (e.g. Soft blue month)" maxlength="80" required />
+            <textarea id="noteBody" rows="3" placeholder="Your note to Lilu…" maxlength="800" required></textarea>
+            <button type="submit" class="btn btn-primary">Save note</button>
+          </form>
+          <ul class="notes-list" id="notesList"></ul>
+        </div>
+
+        <div class="notes-section card">
+          <h3>Galaxy photos 🫧</h3>
+          <p style="font-size:0.9rem">Upload sweet pics — stored only in this browser's localStorage (keep them small).</p>
+          <input type="file" id="photoInput" accept="image/*" multiple style="margin:0.75rem 0;width:100%" />
+          <div id="photoGallery" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:0.65rem;margin-top:0.75rem"></div>
+        </div>
+
+        <p style="text-align:center;margin-top:1.5rem">
+          <button type="button" class="btn btn-ghost" id="vaultLock">Lock vault</button>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal">
+      <div class="heart-icon" aria-hidden="true">💙</div>
+      <h3 id="modalTitle">Special day</h3>
+      <p id="modalBody"></p>
+      <button type="button" class="btn btn-primary modal-close" id="modalClose">Close</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Blub · Ryu <span class="heart">♡</span> Lilu · made with soft blue</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/vault.js"></script>
+  <script src="js/playlist.js"></script>
+</body>
+</html>
