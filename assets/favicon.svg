@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Blub heart">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9DB6E0"/>
+      <stop offset="100%" stop-color="#6A88C6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#E8F0FA"/>
+  <path d="M32 48c-1.2 0-22-12.8-22-24.5C10 16.2 16.2 12 21.5 12c3.4 0 6.8 1.7 10.5 5.4C35.7 13.7 39.1 12 42.5 12 47.8 12 54 16.2 54 23.5 54 35.2 33.2 48 32 48z" fill="url(#g)"/>
+  <circle cx="22" cy="20" r="3.5" fill="#fff" opacity=".55"/>
+  <circle cx="44" cy="18" r="2.2" fill="#fff" opacity=".4"/>
+</svg>
