@@ -895,3 +895,8 @@ p { margin-bottom: 0.85rem; color: var(--ink-soft); }
   }
   .page { animation: none; }
 }
+
+/* Shared board */
+#boardName, #boardOther { width:100%; padding:0.6rem 0.8rem; border-radius:12px; border:1px solid var(--blue-soft); background:var(--blue-fog); color:var(--ink); font:inherit; }
+.board-msg { animation: boardIn .45s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes boardIn { from { opacity:0; transform:translateY(10px) scale(.98); } to { opacity:1; transform:none; } }
