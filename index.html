@@ -175,7 +175,7 @@
         </form>
       </div>
       <div class="vault-content vault-hidden" id="vaultContent">
-        <p class="device-note">🔒 Content stays on <strong>this device</strong> (session + localStorage) unless you host the site yourself. Photos never leave your browser.</p>
+        <p class="device-note">🔒 Messages are encrypted and shared with anyone who has the key. Monthly notes &amp; photos stay on <strong>this device</strong>.</p>
         <article class="letter">
           <p class="salutation">Dear Lilu,</p>
           <p>I love you more than soft blue nights and midnight talks. Building Blub is me saying: I want a life with you — real mornings, shared plans, a home that feels like us.</p>
@@ -184,6 +184,19 @@
           <p>Dream with me. Start a life with me. Keep choosing Blub.</p>
           <p class="signoff">Forever yours,<br>Ryu · Malaak 💙</p>
         </article>
+
+        <div class="notes-section card board-card" style="margin-bottom:1.5rem">
+          <h3>Leave a message 💌</h3>
+          <p style="font-size:0.9rem">Shared with everyone who has the vault key — encrypted with the password, synced across devices.</p>
+          <form class="notes-form" id="boardForm">
+            <select id="boardName"><option>Ryu</option><option>Lilu</option><option value="other">Someone else…</option></select>
+            <input type="text" id="boardOther" placeholder="Your name" maxlength="40" style="display:none" />
+            <textarea id="boardText" rows="3" placeholder="Write a message or note…" maxlength="1000" required></textarea>
+            <button type="submit" class="btn btn-primary">Post message</button>
+          </form>
+          <p id="boardStatus" style="font-size:0.8rem;margin:0.5rem 0 0"></p>
+          <ul class="notes-list" id="boardList"></ul>
+        </div>
 
         <div class="notes-section card" style="margin-bottom:1.5rem">
           <h3>Monthly anniversary notes</h3>
@@ -226,6 +239,7 @@
 
   <script src="js/main.js"></script>
   <script src="js/calendar.js"></script>
+  <script src="js/board.js"></script>
   <script src="js/vault.js"></script>
   <script src="js/playlist.js"></script>
 </body>
