@@ -23,8 +23,12 @@
     sessionStorage.setItem(SESSION_KEY, '1');
     renderNotes();
     renderPhotos();
+    const pw = sessionStorage.getItem('blub_vault_pw');
+    if (pw && window.BlubBoard) window.BlubBoard.open(pw);
   }
   function lock() {
+    sessionStorage.removeItem('blub_vault_pw');
+    if (window.BlubBoard) window.BlubBoard.close();
     content.classList.add('vault-hidden');
     gate.classList.remove('vault-hidden');
     sessionStorage.removeItem(SESSION_KEY);
@@ -39,6 +43,7 @@
     const pw = document.getElementById('vaultPw').value;
     const h = await sha256(pw);
     if (h === HASH) {
+      sessionStorage.setItem('blub_vault_pw', pw);
       unlock();
       if (window.spawnHeart) window.spawnHeart(window.innerWidth / 2, 200);
     } else {
